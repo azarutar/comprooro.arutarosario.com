@@ -1,0 +1,69 @@
+<div class="overlay"></div>
+<div class="container content-section py-5">
+    <!-- Intestazione -->
+    <div class="row mb-4">
+        <div class="col-12 text-center mb-4">
+            <h1 class="gold-text"><i class="bi bi-gem"></i> Catalogo Gioielleria</h1>
+            <p class="text-secondary">Visualizza la nostra collezione usato</p>
+        </div>
+
+        <!-- Filtri Dark Mode -->
+        <div class="col-md-6 mb-3">
+            <div class="input-group">
+                <span class="input-group-text bg-dark border-dark"><i class="bi bi-search"></i></span>
+                <input id="searchProductInput" type="text" class="form-control bg-dark border-dark" placeholder="Cerca articolo...">
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <select id="categoryFilter" class="form-select bg-dark border-dark">
+                <option selected>Tutte le categorie</option>
+                <option>Anelli</option>
+                <option>Collane</option>
+                <option>Orecchini</option>
+                <option>Bracialli</option>
+                <option>Orologi</option>
+            </select>
+        </div>
+        <div class="col-md-3 mb-3">
+            <select id="materialFilter" class="form-select bg-dark border-dark">
+                <option selected>Tutti i materiali</option>
+                <option>Oro Giallo</option>
+                <option>Oro Bianco</option>
+                <option>Oro Rosa</option>
+                <option>Argento</option>
+                <option>Platino</option>
+            </select>
+        </div>
+        <!-- <div class="col-md-3 mb-3">
+            <select id="ConditionFilter" class="form-select bg-dark border-dark">
+                <option selected>Tutti i materiali</option>
+                <option>Usato</option>
+                <option>Nuovo</option>
+            </select>
+        </div> -->
+    </div>
+
+    <!-- Griglia prodotti -->
+    <div id="gridProducts" class="row g-4">
+        <!-- Aggiungi altri prodotti qui -->
+    </div>
+
+    <!-- Paginazione Dark -->
+    <nav class="mt-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

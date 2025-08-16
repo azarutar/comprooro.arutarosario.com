@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compro Oro & Argento</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <header>
+        <!-- Navbar Menu di navigazione -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top"></nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="sectionHome" class="page-section bg-home active"></section>
+
+        <!-- Chi Siamo Section -->
+        <section id="sectionChiSiamo" class="page-section section-bg bg-chi-siamo"></section>
+
+        <!-- Shop Section -->
+        <section id="sectionShop" class="page-section section-bg bg-shop"></section>
+
+        <!-- Contact Section -->
+        <section id="sectionContact" class="page-section section-bg bg-contatti"></section>
+
+        <!-- NotificationCenter -->
+        <div id="toastLiveNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="toastLiveNotification" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong id="toastLiveNotificationTitle" class="me-auto">NotificationCenter</strong>
+                    <small>Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="toastLiveNotificationMSG" class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
+        <!-- End of NotificationCenter -->
+    </main>
+
+    <footer id="footer" class="sticky-sm-bottom"></footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./JavaScript/Index.js"></script>
+</body>
+
+</html>

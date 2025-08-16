@@ -1,0 +1,108 @@
+{
+  "general": {
+    "siteName": "Oro Prezioso",
+    "logo": "fas fa-gem"
+  },
+  "sections": {
+    "home": {
+      "hero": {
+        "title": "Compro Oro & Argento",
+        "subtitle": "La vostra destinazione di fiducia per la compravendita di oro, argento e gioielli di alta qualità"
+      },
+      "services": {
+        "title": "I Nostri Servizi",
+        "items": [
+          {
+            "icon": "fas fa-balance-scale",
+            "title": "Compro Oro",
+            "description": "Valutiamo e acquistiamo oro usato di qualsiasi tipo: gioielli, monete, lingotti e oro da investimento."
+          },
+          {
+            "icon": "fas fa-coins",
+            "title": "Compro Argento",
+            "description": "Acquistiamo argento in ogni forma: gioielli, posate, monete e oggetti di argenteria."
+          },
+          {
+            "icon": "fas fa-gem",
+            "title": "Vendita Gioielli",
+            "description": "Ampia selezione di gioielli usati e nuovi di alta qualità a prezzi vantaggiosi."
+          }
+        ]
+      },
+      "promo": {
+        "title": "Valorizza i Tuoi Preziosi",
+        "text": "Affidati a professionisti con anni di esperienza nel settore. Valutazioni trasparenti e pagamenti immediati per il tuo oro e argento.",
+        "points": [
+          "Valutazioni gratuite senza impegno",
+          "Pagamenti immediati in contanti",
+          "Prezzi competitivi sul mercato"
+        ]
+      }
+    },
+    "about": {
+      "title": "Chi Siamo",
+      "subtitle": "La Nostra Storia",
+      "history": "Fondato nel 2005, il nostro negozio è diventato un punto di riferimento per chi desidera vendere i propri preziosi o acquistare gioielli di qualità a prezzi convenienti. La nostra esperienza pluriennale ci permette di offrire valutazioni accurate e trasparenti.",
+      "mission": "La nostra missione è offrire un servizio professionale e onesto, garantendo sempre la massima soddisfazione dei nostri clienti. Ogni pezzo viene attentamente valutato e autenticato dai nostri esperti.",
+      "team": {
+        "title": "Il Nostro Team",
+        "members": [
+          {
+            "name": "Marco Rossi",
+            "role": "Fondatore",
+            "image": "/api/placeholder/200/200",
+            "description": "Esperto del settore con oltre 20 anni di esperienza nella valutazione di metalli preziosi."
+          },
+          {
+            "name": "Laura Bianchi",
+            "role": "Gemmologa",
+            "image": "/api/placeholder/200/200",
+            "description": "Specialista nella valutazione di pietre preziose e gioielli di alta gamma."
+          },
+          {
+            "name": "Antonio Verdi",
+            "role": "Consulente Vendite",
+            "image": "/api/placeholder/200/200",
+            "description": "Ti aiuterà a trovare il gioiello perfetto per ogni occasione e budget."
+          }
+        ]
+      }
+    },
+    "shop": {
+      "title": "I Nostri Gioielli"
+    },
+    "contact": {
+      "title": "Contattaci",
+      "info": {
+        "title": "Informazioni di Contatto",
+        "description": "Siamo a tua disposizione per qualsiasi domanda o richiesta. Contattaci o vieni a trovarci in negozio!",
+        "address": "Via Roma 123, 00100 Roma",
+        "phone": "+39 06 1234567",
+        "email": "info@oroprezioso.it",
+        "hours": "Lun-Sab: 9:00-19:00"
+      },
+      "form": {
+        "title": "Inviaci un Messaggio",
+        "privacyLabel": "Acconsento al trattamento dei dati personali"
+      },
+      "social": {
+        "title": "Seguici sui Social"
+      }
+    },
+    "footer": {
+      "about": {
+        "title": "Oro Prezioso",
+        "text": "Da oltre 15 anni offriamo servizi di compravendita di oro, argento e gioielli usati e nuovi con trasparenza e professionalità."
+      },
+      "links": {
+        "title": "Link Utili"
+      },
+      "contact": {
+        "title": "Contatti Rapidi",
+        "phone": "+39 06 1234567",
+        "email": "info@oroprezioso.it"
+      },
+      "copyright": "© 2025 Oro Prezioso. Tutti i diritti riservati."
+    }
+  }
+}
