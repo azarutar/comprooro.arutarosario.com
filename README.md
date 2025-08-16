@@ -1,2 +1,2 @@
-# oro.arutarosario.com
-SitoWeb oro.arutarosario.com
+# comprooro.arutarosario.com
+SitoWeb comprooro.arutarosario.com
