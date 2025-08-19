@@ -18,7 +18,11 @@ export default class HtmlBuilder {
         string = HtmlBuilder.RepleaceAllKey(string, "footerText", jsonDataInfo.footerText);
         string = HtmlBuilder.RepleaceAllKey(string, "address", jsonDataInfo.address);
         string = HtmlBuilder.RepleaceAllKey(string, "phone", jsonDataInfo.phone);
+        string = HtmlBuilder.RepleaceAllKey(string, "mobilePhone", jsonDataInfo.mobilePhone);
         string = HtmlBuilder.RepleaceAllKey(string, "eMail", jsonDataInfo.eMail);
+        string = HtmlBuilder.RepleaceAllKey(string, "facebook", jsonDataInfo.facebook);
+        string = HtmlBuilder.RepleaceAllKey(string, "instagram", jsonDataInfo.instagram);
+        string = HtmlBuilder.RepleaceAllKey(string, "whatsApp", jsonDataInfo.whatsApp);
         return string;
     }
 

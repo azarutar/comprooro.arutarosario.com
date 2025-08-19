@@ -23,24 +23,27 @@ export default class ProductsManager {
 
         console.log(this.idSearchTextProduct);
         console.log(this.idCategoryFilter);
-        for (let jsonProduct of this.products) {
-            let valueSearchTextProduct = document.getElementById(this.idSearchTextProduct).value;
-            let searchTerm = valueSearchTextProduct.toLowerCase().trim();
-            let valueFilterCategory = document.getElementById(this.idCategoryFilter).value;
-            let valueFilterMaterial = document.getElementById(this.idMaterialFilter).value;
-            //let valueFilterCondition = document.getElementById("conditionFilter").value;
-            
-            if (valueFilterCategory.includes("Tutte") || jsonProduct.category === valueFilterCategory ) {
-                if (valueFilterMaterial.includes("Tutti") || jsonProduct.material === valueFilterMaterial ) {
-                    // if (valueFilterCondition.includes("Tutti") || jsonProduct.material === valueFilterCondition ) {
-                        // }
+        console.log(this.products);
+        if (this.products.length > 0)  {
+            for (let jsonProduct of this.products) {
+                let valueSearchTextProduct = document.getElementById(this.idSearchTextProduct).value;
+                let searchTerm = valueSearchTextProduct.toLowerCase().trim();
+                let valueFilterCategory = document.getElementById(this.idCategoryFilter).value;
+                let valueFilterMaterial = document.getElementById(this.idMaterialFilter).value;
+                //let valueFilterCondition = document.getElementById("conditionFilter").value;
+                
+                if (valueFilterCategory.includes("Tutte") || jsonProduct.category === valueFilterCategory ) {
+                    if (valueFilterMaterial.includes("Tutti") || jsonProduct.material === valueFilterMaterial ) {
+                        // if (valueFilterCondition.includes("Tutti") || jsonProduct.material === valueFilterCondition ) {
+                            // }
 
-                    if (!valueSearchTextProduct || valueSearchTextProduct.trim() === "" || 
-                        (jsonProduct.title && jsonProduct.title.toLowerCase().includes(searchTerm)) ||
-                        (jsonProduct.description && jsonProduct.description.toLowerCase().includes(searchTerm)) ) {
+                        if (!valueSearchTextProduct || valueSearchTextProduct.trim() === "" || 
+                            (jsonProduct.title && jsonProduct.title.toLowerCase().includes(searchTerm)) ||
+                            (jsonProduct.description && jsonProduct.description.toLowerCase().includes(searchTerm)) ) {
 
-                        this.filteredProdotti.push(jsonProduct);
-                        await this.InsertProduct(jsonProduct);
+                            this.filteredProdotti.push(jsonProduct);
+                            await this.InsertProduct(jsonProduct);
+                        }
                     }
                 }
             }
