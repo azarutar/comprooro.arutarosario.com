@@ -61,18 +61,30 @@ section {
 /* Section */
 .bg-home {
     background-image: url('/Images/metal-gold-metal-plate-wallpaper-preview.jpg');
+    background-size: cover;        /* L'immagine riempie tutta la sezione */
+    background-position: center;   /* Centra l'immagine */
+    background-repeat: no-repeat;  /* Evita che l'immagine si ripeta */
 }
 
 .bg-shop {
     background-image: url('/Images/metal-gold-metal-plate-wallpaper-preview.jpg');
+    background-size: cover;        /* L'immagine riempie tutta la sezione */
+    background-position: center;   /* Centra l'immagine */
+    background-repeat: no-repeat;  /* Evita che l'immagine si ripeta */
 }
 
 .bg-chi-siamo {
     background-image: url('/Images/metal-gold-metal-plate-wallpaper-preview.jpg');
+    background-size: cover;        /* L'immagine riempie tutta la sezione */
+    background-position: center;   /* Centra l'immagine */
+    background-repeat: no-repeat;  /* Evita che l'immagine si ripeta */
 }
 
 .bg-contatti {
     background-image: url('/Images/metal-gold-metal-plate-wallpaper-preview.jpg');
+    background-size: cover;        /* L'immagine riempie tutta la sezione */
+    background-position: center;   /* Centra l'immagine */
+    background-repeat: no-repeat;  /* Evita che l'immagine si ripeta */
 }
 
 /* Footer */
