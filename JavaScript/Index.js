@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     InitTabs();
     //kanji = new Kanji(htmlBuilder, ShowToast); // per mostrare la notifica
 
-    let htmlProduct = await htmlBuilder.GetStringView('ViewProducts/Product.html');
+    let htmlProduct = await htmlBuilder.GetStringView('ViewElements/Product.html');
     productsManager = new ProductsManager(jsonProducts, htmlProduct, "gridProducts", "searchProductInput", "categoryFilter", "materialFilter", "conditionFilter");
     await productsManager.ReloadProducts();
 
@@ -53,18 +53,24 @@ document.addEventListener('DOMContentLoaded', async function() {
 async function StartUp() {
 
     jsonDataInfo = await UtilityClass.GetJsonFromRootPage("DataInfo");
-
+    // Add Navbar
     let htmlNavbar = await htmlBuilder.GetStringView('Navbar.html');
     htmlNavbar = await HtmlBuilder.RepalceKeysDataInfoOnString(htmlNavbar, jsonDataInfo);
     IndexManager.ReplaceHtmlContent("navbar", htmlNavbar);
-
+    // Add Footer
     let htmlFooter = await htmlBuilder.GetStringView('Footer.html');
     htmlFooter = await HtmlBuilder.RepalceKeysDataInfoOnString(htmlFooter, jsonDataInfo);
     IndexManager.ReplaceHtmlContent("footer", htmlFooter);
-
+    // Add HomeSection
     let htmlSectionsHome = await htmlBuilder.GetStringView('ViewSections/Home.html');
     htmlSectionsHome = await HtmlBuilder.RepalceKeysDataInfoOnString(htmlSectionsHome, jsonDataInfo);
     IndexManager.ReplaceHtmlContent("sectionHome", htmlSectionsHome);
+    // Add bachecaMessages
+    let htmlBachecaMessage = await htmlBuilder.GetStringView('ViewElements/BachecaMessage.html');
+    for (let jsonBachecaMsg of jsonDataInfo.bachecaMessages) {
+        let htmlBachecaMessageTmp = await HtmlBuilder.RepalceKeysDataInfoOfBachecaMessage(htmlBachecaMessage, jsonBachecaMsg);
+        IndexManager.InjecHtmlContentToTheEnd("bachecaMessages", htmlBachecaMessageTmp)
+    }
 
     let htmlSectionsContact = await htmlBuilder.GetStringView('ViewSections/Contact.html');
     htmlSectionsContact = await HtmlBuilder.RepalceKeysDataInfoOnString(htmlSectionsContact, jsonDataInfo);

@@ -26,6 +26,12 @@ export default class HtmlBuilder {
         return string;
     }
 
+    static async RepalceKeysDataInfoOfBachecaMessage(string, jsonDataInfoBachecaMessage) {
+        string = HtmlBuilder.RepleaceAllKey(string, "fa_icon", jsonDataInfoBachecaMessage.fa_icon);
+        string = HtmlBuilder.RepleaceAllKey(string, "bachecaMsg", jsonDataInfoBachecaMessage.bachecaMsg);
+        return string;
+    }
+
     static async RepalceKeysProductInfoOnString(string, jsonProduct) {
         string = HtmlBuilder.RepleaceAllKey(string, "id", jsonProduct.id);
         string = HtmlBuilder.RepleaceAllKey(string, "title", jsonProduct.title);
