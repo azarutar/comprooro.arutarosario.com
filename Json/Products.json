@@ -1,3 +1,62 @@
 [
-
+    {
+      "id": 1,
+      "title": "Bracciale spina di pesce",
+      "description": "Bracciale d'oro a spina di pesce, 18kt, lungo 19cm",
+      "category": "Bracciali",
+      "material": "Oro Giallo",
+      "weight": 6.8,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Anello d'oro",
+      "description": "Anello in Oro 18kt, misura 21.",
+      "category": "Anelli",
+      "material": "Oro Giallo",
+      "weight": 6.8,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Collana a maglia figaro",
+      "description": "Collana a maglia figaro, d'oro 18kt, lunga 62cm",
+      "category": "Collane",
+      "material": "Oro Giallo",
+      "weight": 12.4,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Orecchini con zircone",
+      "description": "Paio di orecchini d'oro 18kt con zircone.",
+      "category": "Orecchini",
+      "material": "Oro Giallo",
+      "weight": 6.3,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Orecchini pietra nera",
+      "description": "Paio di orecchini d'oro 18kt con pietra nera lucida.",
+      "category": "Orecchini",
+      "material": "Oro Giallo",
+      "weight": 1.9,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/5.jpg"
+    }
 ]
