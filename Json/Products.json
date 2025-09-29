@@ -144,18 +144,6 @@
       "imagePath": "/Images/Articoli/12.jpg"
     },
     {
-      "id": 12,
-      "title": "Bracciale a cordoncino",
-      "description": "Bracciale d'oro 18kt.",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 0.8,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/12.jpg"
-    },
-    {
       "id": 13,
       "title": "Bracciale a cordoncino",
       "description": "Bracciale d'oro 18kt.",
@@ -165,7 +153,7 @@
       "price": 0,
       "featured": false,
       "condition": "Usato",
-      "imagePath": "/Images/Articoli/12.jpg"
+      "imagePath": "/Images/Articoli/13.jpg"
     },
     {
       "id": 14,
