@@ -238,5 +238,29 @@
       "featured": false,
       "condition": "Usato",
       "imagePath": "/Images/Articoli/20.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Ciondolo a sfera",
+      "description": "Ciondolo a sfera d'oro 18kt",
+      "category": "Ciondoli",
+      "material": "Oro bianco",
+      "weight": 0.70,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/21.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Ciondolo crocifisso",
+      "description": "Ciondolo d'oro 18kt con pietra nera al centro",
+      "category": "Ciondoli",
+      "material": "Oro Giallo",
+      "weight": 1.30,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/22.jpg"
     }
 ]
