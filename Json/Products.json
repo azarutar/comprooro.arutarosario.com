@@ -262,5 +262,41 @@
       "featured": false,
       "condition": "Usato",
       "imagePath": "/Images/Articoli/22.jpg"
+    },
+    {
+      "id": 23,
+      "title": "bracialle a fascia",
+      "description": "bracialle a fascia d'oro 18kt",
+      "category": "Bracciali",
+      "material": "Oro Giallo",
+      "weight": 7.70,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/23.jpg"
+    }
+    {
+      "id": 24,
+      "title": "Ciondolo a corno ",
+      "description": "Ciondolo a corno d'oro 18kt",
+      "category": "Ciondoli",
+      "material": "Oro Giallo",
+      "weight": 1.5,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/24.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Bracialle a maglia con placa di incisione",
+      "description": "Bracialle a maglia con placa di incisione d'oro 18kt",
+      "category": "Bracciali",
+      "material": "Oro Giallo",
+      "weight": 2.9,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/25.jpg"
     }
 ]
