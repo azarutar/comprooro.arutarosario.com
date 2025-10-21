@@ -244,7 +244,7 @@
       "title": "Ciondolo a sfera",
       "description": "Ciondolo a sfera d'oro 18kt",
       "category": "Ciondoli",
-      "material": "Oro bianco",
+      "material": "Oro Bianco",
       "weight": 0.70,
       "price": 0,
       "featured": false,
@@ -298,5 +298,17 @@
       "featured": false,
       "condition": "Usato",
       "imagePath": "/Images/Articoli/25.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Collanana con ciondolo",
+      "description": "Collanana con ciondolo a stelle con zirconi, oro bianco 18kt ",
+      "category": "Collane",
+      "material": "Oro Bianco",
+      "weight": 5.2,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/26.jpg"
     }
 ]
