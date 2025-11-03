@@ -442,5 +442,17 @@
       "featured": false,
       "condition": "Usato",
       "imagePath": "/Images/Articoli/27.jpg"
+    },
+    {
+      "id": 69,
+      "title": "Braccialetto Padona",
+      "description": "Braccialetto Padona con ciondoli vari",
+      "category": "Bracciali",
+      "material": "Argento",
+      "weight": 31,
+      "price": 0,
+      "featured": false,
+      "condition": "Usato",
+      "imagePath": "/Images/Articoli/69.jpg"
     }
 ]
