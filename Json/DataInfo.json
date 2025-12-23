@@ -11,6 +11,10 @@
     "whatsApp": "https://wa.me/393793215692?text=Ciao%20vorrei%20più%20informazioni",
     "bachecaMessages": [
         {
+            "fa-icon": "fa-plane-departure",
+            "bachecaMsg": "Chiusi per feste natalizie dal 24 al 03 Gennaio!"
+        },
+        {
             "fa-icon": "fa-bullhorn",
             "bachecaMsg": "Guarda i nuovi articoli nella sezione shop!"
         }
