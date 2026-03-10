@@ -168,18 +168,6 @@
       "imagePath": "/Images/Articoli/14.jpg"
     },
     {
-      "id": 15,
-      "title": "Bracciale a maglia figaro",
-      "description": "Bracciale d'oro 18kt.",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 11,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/15.jpg"
-    },
-    {
       "id": 16,
       "title": "Ferma cravatta tricolore",
       "description": "Ferma cravatta d'oro 18kt.",
@@ -394,18 +382,6 @@
       "featured": false,
       "condition": "Usato",
       "imagePath": "/Images/Articoli/38.jpg"
-    },
-    {
-      "id": 43,
-      "title": "Ciondolo a forma di cane",
-      "description": "Ciondolo a forma di cane",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 1.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/43.jpg"
     },
     {
       "id": 36,
