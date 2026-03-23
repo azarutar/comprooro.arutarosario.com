@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     htmlBuilder = new HtmlBuilder("../Views");
     await StartUp();
     InitTabs();
-    //kanji = new Kanji(htmlBuilder, ShowToast); // per mostrare la notifica
 
     let htmlProduct = await htmlBuilder.GetStringView('ViewElements/Product.html');
     productsManager = new ProductsManager(jsonProducts, htmlProduct, "gridProducts", "searchProductInput", "categoryFilter", "materialFilter", "conditionFilter");
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     toastLiveNotification = toastLiveNotificationContainer.querySelector('#toastLiveNotification');
     toastLiveNotificationTitle = toastLiveNotification.querySelector('#toastLiveNotificationTitle');
     toastLiveNotificationMSG = toastLiveNotificationContainer.querySelector('#toastLiveNotificationMSG');
-    
+
     // Aggiunta di eventi.
     document.addEventListener("click", HandleTabClick);
     document.getElementById('btnEsploraShop').addEventListener("click", PressedBtnEsploraShop);
@@ -48,6 +47,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('categoryFilter').addEventListener('change', () => productsManager.ReloadProducts());
     document.getElementById('materialFilter').addEventListener('change', () => productsManager.ReloadProducts());
 
+    // Navbar scroll effect
+    InitNavbarScroll();
+
+    // Scroll to top button
+    InitScrollToTop();
+
+    // Animate elements on visibility
+    InitFadeInObserver();
 });
 
 async function StartUp() {
@@ -95,19 +102,29 @@ function InitTabs() {
 }
 
 function ActivateTab(tab) {
-    tab.tabS.style.display = "block";
+    tab.tabS.classList.add("active");
     tab.tabI.classList.add("active");
+    // Scroll to top on tab change
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Re-trigger fade-in animations for newly visible elements
+    requestAnimationFrame(() => {
+        tab.tabS.querySelectorAll('.fade-in-up').forEach(el => {
+            el.classList.remove('visible');
+            void el.offsetWidth; // force reflow
+            el.classList.add('visible');
+        });
+    });
 }
 
 function DeActivateTab(tab) {
-    tab.tabS.style.display = "none";
+    tab.tabS.classList.remove("active");
     tab.tabI.classList.remove("active");
 }
 
 function HandleTabClick(event) {
     let target = event.target;
 
-    if (target.getAttribute("class") === "nav-link active") {
+    if (target.classList.contains("nav-link") && target.classList.contains("active")) {
         return; // già attivo, non fare nulla
     }
 
@@ -117,6 +134,13 @@ function HandleTabClick(event) {
         ActivateTab(clickedTab);
         DeActivateTab(current);
         current = clickedTab;
+
+        // Collapse mobile nav
+        const navCollapse = document.getElementById('navbarNav');
+        if (navCollapse && navCollapse.classList.contains('show')) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+            if (bsCollapse) bsCollapse.hide();
+        }
     } else {
         console.log("Tab NON RICONOSCIUTO! - " + target);
     }
@@ -142,10 +166,57 @@ function PressedBtnContact() {
     current = tabs[3];
 }
 
-// Imposta Google Maps
-// const address = encodeURIComponent(contattiData.indirizzo);
-// const mapIframe = document.getElementById('google-map');
-// mapIframe.src = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${address}`;
+// Navbar scroll effect - adds shadow on scroll
+function InitNavbarScroll() {
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        lastScroll = currentScroll;
+    }, { passive: true });
+}
+
+// Scroll to top button
+function InitScrollToTop() {
+    const btn = document.getElementById('scrollToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    }, { passive: true });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// Intersection Observer for fade-in animations
+function InitFadeInObserver() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.fade-in-up').forEach(el => {
+        observer.observe(el);
+    });
+}
 
 //Funzione per mostrare il toast automaticamente
 function ShowToast(title, msg) {

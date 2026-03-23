@@ -1,57 +1,70 @@
-<div class="overlay"></div>
-<div class="container-fluid content-section">
+<div class="container content-section" style="padding-top: var(--section-pad); padding-bottom: var(--section-pad);">
+
     <h2 class="section-title" id="contact-title">Contattaci</h2>
-    <div class="row">
-        <div class="col text-center">
-            <div class="row">
-                <h3 class="mb-4 gold-text" id="contact-info-title">Informazioni di Contatto</h3>
-                <p id="contact-description">Siamo a tua disposizione per qualsiasi domanda o richiesta. Contattaci o
-                    vieni a trovarci in negozio!</p>
-                <ul class="list-unstyled">
-                    <li class="mb-3"><i class="fas fa-map-marker-alt"></i> <span
-                            id="contact-address">:|§.address.§|:</span>
-                    </li>
-                    <li class="mb-3"><i class="fas fa-phone"></i> <span id="contact-phone">:|§.phone.§|:</span></li>
-                    <li class="mb-3"><i class="bi bi-phone"></i> <span id="contact-mobile-phone">:|§.mobilePhone.§|:</span></li>
-                    <!-- <li class="mb-3"><i class="fas fa-envelope"></i> <span id="contact-email">:|§.eMail.§|:</span></li> -->
-                    <li class="mb-3"><i class="fas fa-clock"></i> <span id="contact-hours">Lun-Sab: 9:00-19:00</span>
-                    </li>
-                </ul>
+
+    <div class="row g-3">
+        <div class="col-lg-5">
+            <h3 class="gold-text mb-1" id="contact-info-title">Informazioni</h3>
+            <div class="line-accent mb-2"></div>
+            <p style="color: var(--smoke); margin-bottom: 0.8rem;" id="contact-description">Siamo a tua disposizione per qualsiasi domanda o richiesta. Contattaci o vieni a trovarci in negozio!</p>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="contact-address">:|§.address.§|:</span>
             </div>
-            <div class="row">
-                <h3 class="mb-4 gold-text" id="follow-us-title">Seguici sui Social</h3>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span id="contact-phone">:|§.phone.§|:</span>
+            </div>
+            <div class="contact-item">
+                <i class="bi bi-phone"></i>
+                <span id="contact-mobile-phone">:|§.mobilePhone.§|:</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span id="contact-hours">Lun-Sab: 9:00-19:00</span>
+            </div>
+
+            <div class="mt-2">
+                <h3 class="gold-text mb-1" id="follow-us-title">Social</h3>
+                <div class="line-accent mb-2"></div>
                 <div class="social-links">
-                    <a href=":|§.facebook.§|:" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href=":|§.instagram.§|:" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href=":|§.whatsApp.§|:" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href=":|§.facebook.§|:" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href=":|§.instagram.§|:" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href=":|§.whatsApp.§|:" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <form id="contactForm" class="bg-dark p-4 rounded shadow-sm">
-                <h3 class="mb-4 gold-text" id="contact-form-title">Inviaci un Messaggio</h3>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome e Cognome</label>
-                    <input type="text" class="form-control" id="name" required>
+
+        <div class="col-lg-7">
+            <form id="contactForm">
+                <h3 class="gold-text mb-1" id="contact-form-title">Inviaci un Messaggio</h3>
+                <div class="line-accent mb-2"></div>
+                <div class="row g-2">
+                    <div class="col-md-6 mb-1">
+                        <label for="name" class="form-label">Nome e Cognome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-6 mb-1">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
+                <div class="mb-1">
                     <label for="phone" class="form-label">Telefono</label>
                     <input type="tel" class="form-control" id="phone">
                 </div>
-                <div class="mb-3">
+                <div class="mb-1">
                     <label for="message" class="form-label">Messaggio</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
                 </div>
-                <div class="mb-3 form-check">
+                <div class="mb-2 form-check">
                     <input type="checkbox" class="form-check-input" id="privacy" required>
-                    <label class="form-check-label" for="privacy" id="privacy-label">Acconsento al trattamento dei dati
-                        personali</label>
+                    <label class="form-check-label" for="privacy" id="privacy-label" style="font-size: 0.95rem; color: var(--smoke);">Acconsento al trattamento dei dati personali</label>
                 </div>
-                <button type="submit" class="btn btn-warning">Invia Messaggio</button>
+                <button type="submit" class="btn-gold w-100 justify-content-center">
+                    <i class="fas fa-paper-plane"></i>Invia Messaggio
+                </button>
             </form>
         </div>
     </div>

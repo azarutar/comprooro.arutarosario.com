@@ -1,51 +1,98 @@
-<div class="overlay"></div>
-<div class="container content-section py-5">
-    <div class="hero-section bg-dark text-light py-5 rounded border border-light-subtle">
-        <div class="container">
-            <h1><span class="gold-text" id="hero-title">Compro Oro & Argento</span></h1>
-            <p class="mt-4" id="hero-subtitle">La vostra destinazione di fiducia per la compravendita di oro, argento e
-                gioielli di alta qualità</p>
-            <div class="mt-5">
-                <a id="btnEsploraShop" href="#sectionShop" class="btn btn-warning btn-lg me-3" data-section="shop">Esplora lo Shop</a>
-                <a id="btnContatti" href="#sectionContact" class="btn btn-outline-light btn-lg" data-section="contact">Contattaci</a>
+<div class="content-section">
+
+    <!-- Hero -->
+    <div class="container" style="padding-top: var(--section-pad); padding-bottom: 0.5rem;">
+        <div class="hero-section">
+            <p class="hero-tagline">Dal 2005 a Pachino</p>
+            <h1 class="gold-text" id="hero-title">Compro Oro & Argento</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle" id="hero-subtitle">La vostra destinazione di fiducia per la compravendita di oro, argento e gioielli di alta qualità</p>
+            <div class="mt-2 d-flex flex-wrap justify-content-center gap-2">
+                <a id="btnEsploraShop" href="#sectionShop" class="btn-gold" data-section="shop">
+                    <i class="bi bi-gem"></i>Esplora lo Shop
+                </a>
+                <a id="btnContatti" href="#sectionContact" class="btn-ghost" data-section="contact">
+                    <i class="bi bi-chat-dots"></i>Contattaci
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="py-5">
-        <div class="container">
-            <div class="row align-items-start">
-                <!-- Contenuto principale -->
-                <div class="col-lg-8" id="promo-content">
-                    <h2 class="mb-4 gold-text" id="promo-title">Valorizza i Tuoi Preziosi</h2>
-                    <p class="mb-4" id="promo-text">Affidati a professionisti con anni di esperienza nel settore.
-                        Valutazioni trasparenti e pagamenti immediati per il tuo oro e argento.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle gold-text me-2"></i> <span
-                                id="promo-point-1">Valutazioni gratuite senza impegno</span></li>
-                        <li class="mb-2"><i class="fas fa-check-circle gold-text me-2"></i> <span
-                                id="promo-point-2">Pagamenti immediati in contanti</span></li>
-                        <li class="mb-2"><i class="fas fa-check-circle gold-text me-2"></i> <span
-                                id="promo-point-3">Prezzi competitivi sul mercato</span></li>
-                    </ul>
-                    <a href="#" class="btn btn-warning mt-3" data-section="contact">Richiedi Informazioni</a>
+    <!-- Services -->
+    <div class="container pb-2">
+        <div class="diamond-sep">
+            <i class="fas fa-diamond"></i>
+        </div>
+        <div class="row g-2 mt-0">
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <div class="glass-card-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h5>Valutazione Gratuita</h5>
+                    <p>Valutazioni accurate e trasparenti per i tuoi preziosi, senza alcun impegno.</p>
                 </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <div class="glass-card-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h5>Pagamento Immediato</h5>
+                    <p>Pagamenti rapidi e sicuri in contanti per tutti i tuoi oggetti in oro e argento.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <div class="glass-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Affidabilità Garantita</h5>
+                    <p>Anni di esperienza e migliaia di clienti soddisfatti ci rendono un punto di riferimento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <!-- Bacheca laterale -->
-                <div class="col-lg-4 mt-4 mt-lg-0">
-                    <div class="card shadow-sm border-warning">
-                        <div class="card-header bg-warning text-dark fw-bold">
-                            📰 Bacheca
+    <!-- Promo + Bacheca -->
+    <div class="container" style="padding-bottom: var(--section-pad);">
+        <div class="row g-3">
+            <div class="col-lg-7 d-flex" id="promo-content">
+                <div class="promo-block w-100">
+                    <h2 class="gold-text mb-2" id="promo-title">Valorizza i Tuoi Preziosi</h2>
+                    <p class="mb-2" style="color: var(--mist);" id="promo-text">Affidati a professionisti con anni di esperienza nel settore. Valutazioni trasparenti e pagamenti immediati per il tuo oro e argento.</p>
+                    <div class="mb-2">
+                        <div class="check-item">
+                            <i class="fas fa-check"></i>
+                            <span id="promo-point-1">Valutazioni gratuite senza impegno</span>
                         </div>
-                        <div class="card-body" id="bacheca">
-                            <ul id="bachecaMessages" class="list-unstyled mb-0">
-                                <!-- Messaggi Bacheca -->
-                            </ul>
+                        <div class="check-item">
+                            <i class="fas fa-check"></i>
+                            <span id="promo-point-2">Pagamenti immediati in contanti</span>
+                        </div>
+                        <div class="check-item">
+                            <i class="fas fa-check"></i>
+                            <span id="promo-point-3">Prezzi competitivi sul mercato</span>
                         </div>
                     </div>
+                    <a href="#" class="btn-gold" data-section="contact">
+                        <i class="fas fa-envelope"></i>Richiedi Informazioni
+                    </a>
                 </div>
-                <!-- Fine bacheca -->
+            </div>
+
+            <div class="col-lg-5 d-flex">
+                <div class="bacheca-card w-100 d-flex flex-column">
+                    <div class="card-header bg-warning text-dark fw-bold">
+                        <i class="fas fa-newspaper me-2"></i>Bacheca
+                    </div>
+                    <div class="card-body flex-grow-1" id="bacheca">
+                        <ul id="bachecaMessages" class="list-unstyled mb-0">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </div>

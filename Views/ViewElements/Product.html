@@ -1,23 +1,22 @@
-<!-- Prodotto 1 -->
-<div class="col-xl-3 col-lg-4 col-md-6">
+<!-- Prodotto -->
+<div class="col-xl-3 col-lg-4 col-md-6 fade-in-up">
     <div class="card product-card h-100">
         <div class="position-relative">
             <div class="product-img-container">
-                <img src=":|§.imagePath.§|:" alt=":|§.title.§|:"
-                    class="product-img">
+                <img src=":|§.imagePath.§|:" alt=":|§.title.§|:" class="product-img" loading="lazy">
             </div>
             <span class="badge badge-featured">:|§.featured.§|:</span>
         </div>
         <div class="card-body d-flex flex-column">
-            <h5 class="card-title gold-text">:|§.title.§|:</h5>
-            <p class="card-text text-secondary mb-2">
-                <i class="bi bi-circle-fill text-warning me-1"></i>:|§.material.§|:, :|§.weight.§|:gr
+            <h5 class="card-title">:|§.title.§|:</h5>
+            <p class="card-text mb-1" style="font-size: 0.92rem; color: var(--champagne); letter-spacing: 0.05em;">
+                :|§.material.§|: &middot; :|§.weight.§|:gr &middot; :|§.condition.§|:
             </p>
-            <p class="card-text mb-3">:|§.description.§|:</p>
+            <p class="card-text mb-1">:|§.description.§|:</p>
             <div class="mt-auto d-flex justify-content-between align-items-center">
-                <!-- <span class="price-tag">:|§.price.§|: €</span>  -->
-                <button class="btn btn-sm btn-outline-light">
-                    <i class="bi bi-eye-fill me-1"></i>ID: :|§.id.§|:
+                <span style="font-size: 0.82rem; color: var(--smoke); letter-spacing: 0.08em; text-transform: uppercase;">ID :|§.id.§|:</span>
+                <button class="btn btn-sm btn-outline-warning">
+                    <i class="bi bi-arrow-right me-1"></i>Dettagli
                 </button>
             </div>
         </div>

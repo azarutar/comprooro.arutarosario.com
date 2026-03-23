@@ -1,21 +1,19 @@
-<div class="overlay"></div>
-<div class="container content-section py-5">
-    <!-- Intestazione -->
-    <div class="row mb-4">
-        <div class="col-12 text-center mb-4">
-            <h1 class="gold-text"><i class="bi bi-gem"></i> Catalogo Gioielleria</h1>
-            <p class="text-secondary">Visualizza la nostra collezione usato</p>
-        </div>
+<div class="container content-section" style="padding-top: var(--section-pad); padding-bottom: var(--section-pad);">
 
-        <!-- Filtri Dark Mode -->
-        <div class="col-md-6 mb-3">
+    <div class="text-center mb-2">
+        <h1 class="section-title">Catalogo</h1>
+        <p style="color: var(--smoke); margin-top: -0.4rem;">Scopri la nostra selezione di gioielli e preziosi</p>
+    </div>
+
+    <div class="row g-2 mb-2" style="border-bottom: 1px solid var(--border-glass); padding-bottom: 0.8rem;">
+        <div class="col-md-6">
             <div class="input-group">
-                <span class="input-group-text bg-dark border-dark"><i class="bi bi-search"></i></span>
-                <input id="searchProductInput" type="text" class="form-control bg-dark border-dark" placeholder="Cerca articolo...">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                <input id="searchProductInput" type="text" class="form-control" placeholder="Cerca articolo...">
             </div>
         </div>
-        <div class="col-md-3 mb-3">
-            <select id="categoryFilter" class="form-select bg-dark border-dark">
+        <div class="col-md-3">
+            <select id="categoryFilter" class="form-select">
                 <option selected>Tutte le categorie</option>
                 <option>Anelli</option>
                 <option>Collane</option>
@@ -26,8 +24,8 @@
                 <option>Ferma cravatta</option>
             </select>
         </div>
-        <div class="col-md-3 mb-3">
-            <select id="materialFilter" class="form-select bg-dark border-dark">
+        <div class="col-md-3">
+            <select id="materialFilter" class="form-select">
                 <option selected>Tutti i materiali</option>
                 <option>Oro Giallo</option>
                 <option>Oro Bianco</option>
@@ -36,35 +34,22 @@
                 <option>Platino</option>
             </select>
         </div>
-        <!-- <div class="col-md-3 mb-3">
-            <select id="ConditionFilter" class="form-select bg-dark border-dark">
-                <option selected>Tutti i materiali</option>
-                <option>Usato</option>
-                <option>Nuovo</option>
-            </select>
-        </div> -->
     </div>
 
-    <!-- Griglia prodotti -->
-    <div id="gridProducts" class="row g-4">
-        <!-- Aggiungi altri prodotti qui -->
+    <div class="mb-2">
+        <p id="productCount" class="mb-0" style="color: var(--smoke); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em;"></p>
     </div>
 
-    <!-- Paginazione Dark -->
-    <nav class="mt-5">
+    <div id="gridProducts" class="row g-2"></div>
+
+    <nav class="mt-3">
         <ul class="pagination justify-content-center">
             <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
+                <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
             </li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li> -->
             <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
+                <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
             </li>
         </ul>
     </nav>
