@@ -1,434 +1,506 @@
 [
     {
-      "id": 1,
-      "title": "Bracciale spina di pesce",
-      "description": "Bracciale d'oro a spina di pesce, 18kt, lungo 19cm",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 6.8,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/1.jpg"
+        "id": 1,
+        "title": "Bracciale spina di pesce",
+        "description": "Bracciale d'oro a spina di pesce, 18kt, lungo 19cm",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 6.8,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/1.jpg"
+        ]
     },
     {
-      "id": 2,
-      "title": "Orecchini d'oro",
-      "description": "Orecchini in Oro 18kt bianco e giallo.",
-      "category": "Orecchini",
-      "material": "Oro Giallo",
-      "weight": 3.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/2.jpg"
+        "id": 2,
+        "title": "Orecchini d'oro",
+        "description": "Orecchini in Oro 18kt bianco e giallo.",
+        "category": "Orecchini",
+        "material": "Oro Giallo",
+        "weight": 3.9,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/2.jpg"
+        ]
     },
     {
-      "id": 3,
-      "title": "Collana a maglia figaro",
-      "description": "Collana a maglia figaro, d'oro 18kt, lunga 62cm",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 12.4,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/3.jpg"
+        "id": 3,
+        "title": "Collana a maglia figaro",
+        "description": "Collana a maglia figaro, d'oro 18kt, lunga 62cm",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 12.4,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/3.jpg"
+        ]
     },
     {
-      "id": 4,
-      "title": "Orecchini con zircone",
-      "description": "Paio di orecchini d'oro 18kt con zircone.",
-      "category": "Orecchini",
-      "material": "Oro Giallo",
-      "weight": 6.3,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/4.jpg"
+        "id": 4,
+        "title": "Orecchini con zircone",
+        "description": "Paio di orecchini d'oro 18kt con zircone.",
+        "category": "Orecchini",
+        "material": "Oro Giallo",
+        "weight": 6.3,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/4.jpg"
+        ]
     },
     {
-      "id": 5,
-      "title": "Orecchini pietra nera",
-      "description": "Paio di orecchini d'oro 18kt con pietra nera lucida.",
-      "category": "Orecchini",
-      "material": "Oro Giallo",
-      "weight": 1.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/5.jpg"
+        "id": 5,
+        "title": "Orecchini pietra nera",
+        "description": "Paio di orecchini d'oro 18kt con pietra nera lucida.",
+        "category": "Orecchini",
+        "material": "Oro Giallo",
+        "weight": 1.9,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/5.jpg"
+        ]
     },
     {
-      "id": 6,
-      "title": "Orecchini attorcigliati",
-      "description": "Paio di orecchini d'oro 18kt.",
-      "category": "Orecchini",
-      "material": "Oro Giallo",
-      "weight": 1.6,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/6.jpg"
+        "id": 6,
+        "title": "Orecchini attorcigliati",
+        "description": "Paio di orecchini d'oro 18kt.",
+        "category": "Orecchini",
+        "material": "Oro Giallo",
+        "weight": 1.6,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/6.jpg"
+        ]
     },
     {
-      "id": 7,
-      "title": "Bracciale ",
-      "description": "Bracciale d'oro 18kt.",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 1,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/7.jpg"
+        "id": 7,
+        "title": "Bracciale ",
+        "description": "Bracciale d'oro 18kt.",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 1,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/7.jpg"
+        ]
     },
     {
-      "id": 8,
-      "title": "Ciondolo zodiacale",
-      "description": "Ciondolo zodiacale d'oro 18kt.",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 0.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/8.jpg"
+        "id": 8,
+        "title": "Ciondolo zodiacale",
+        "description": "Ciondolo zodiacale d'oro 18kt.",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 0.9,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/8.jpg"
+        ]
     },
     {
-      "id": 9,
-      "title": "Bracciale",
-      "description": "Bracciale per incisione d'oro 18kt.",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 1.3,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/9.jpg"
+        "id": 9,
+        "title": "Bracciale",
+        "description": "Bracciale per incisione d'oro 18kt.",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 1.3,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/9.jpg"
+        ]
     },
     {
-      "id": 10,
-      "title": "Bracciale a maglia tigre",
-      "description": "Bracciale a maglia tigre pinsata d'oro 18kt.",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 1.8,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/10.jpg"
+        "id": 10,
+        "title": "Bracciale a maglia tigre",
+        "description": "Bracciale a maglia tigre pinsata d'oro 18kt.",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 1.8,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/10.jpg"
+        ]
     },
     {
-      "id": 11,
-      "title": "Collana",
-      "description": "Collana d'oro 18kt.",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 1.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/11.jpg"
+        "id": 11,
+        "title": "Collana",
+        "description": "Collana d'oro 18kt.",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 1.9,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/11.jpg"
+        ]
     },
     {
-      "id": 12,
-      "title": "Orecchini con perla bianca",
-      "description": "Un paio di orecchini d'oro 18kt. con perla bianca",
-      "category": "Orecchini",
-      "material": "Oro Giallo",
-      "weight": 1,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/12.jpg"
+        "id": 12,
+        "title": "Orecchini con perla bianca",
+        "description": "Un paio di orecchini d'oro 18kt. con perla bianca",
+        "category": "Orecchini",
+        "material": "Oro Giallo",
+        "weight": 1,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/12.jpg"
+        ]
     },
     {
-      "id": 13,
-      "title": "Bracciale a cordoncino",
-      "description": "Bracciale d'oro 18kt.",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 0.8,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/13.jpg"
+        "id": 13,
+        "title": "Bracciale a cordoncino",
+        "description": "Bracciale d'oro 18kt.",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 0.8,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/13.jpg"
+        ]
     },
     {
-      "id": 14,
-      "title": "Collana a catena cubana piatta",
-      "description": "Collana d'oro 18kt.",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 9.7,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/14.jpg"
+        "id": 14,
+        "title": "Collana a catena cubana piatta",
+        "description": "Collana d'oro 18kt.",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 9.7,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/14.jpg"
+        ]
     },
     {
-      "id": 16,
-      "title": "Ferma cravatta tricolore",
-      "description": "Ferma cravatta d'oro 18kt.",
-      "category": "Ferma cravatta",
-      "material": "Oro Giallo",
-      "weight": 4.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/16.jpg"
+        "id": 16,
+        "title": "Ferma cravatta tricolore",
+        "description": "Ferma cravatta d'oro 18kt.",
+        "category": "Ferma cravatta",
+        "material": "Oro Giallo",
+        "weight": 4.9,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/16.jpg"
+        ]
     },
     {
-      "id": 17,
-      "title": "Bracciale d'oro con perle",
-      "description": "Bracciale d'oro 18kt. con perle bianche",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 2.5,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/17.jpg"
+        "id": 17,
+        "title": "Bracciale d'oro con perle",
+        "description": "Bracciale d'oro 18kt. con perle bianche",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 2.5,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/17.jpg"
+        ]
     },
     {
-      "id": 18,
-      "title": "Collana a catena nera ",
-      "description": "Collana con moschettone d'oro 18kt. e catenna in gomma nera",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 0.5,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/18.jpg"
+        "id": 18,
+        "title": "Collana a catena nera ",
+        "description": "Collana con moschettone d'oro 18kt. e catenna in gomma nera",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 0.5,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/18.jpg"
+        ]
     },
     {
-      "id": 19,
-      "title": "Bracialle con ciondoli",
-      "description": "Bracialle d'oro 18kt con 3 ciondoli d'oro",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 3.1,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/19.jpg"
+        "id": 19,
+        "title": "Bracialle con ciondoli",
+        "description": "Bracialle d'oro 18kt con 3 ciondoli d'oro",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 3.1,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/19.jpg"
+        ]
     },
     {
-      "id": 20,
-      "title": "Ciondolo crocifisso",
-      "description": "Ciondolo d'oro 18kt",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 2,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/20.jpg"
+        "id": 20,
+        "title": "Ciondolo crocifisso",
+        "description": "Ciondolo d'oro 18kt",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 2,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/20.jpg"
+        ]
     },
     {
-      "id": 21,
-      "title": "Ciondolo a sfera",
-      "description": "Ciondolo a sfera d'oro 18kt",
-      "category": "Ciondoli",
-      "material": "Oro Bianco",
-      "weight": 0.70,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/21.jpg"
+        "id": 21,
+        "title": "Ciondolo a sfera",
+        "description": "Ciondolo a sfera d'oro 18kt",
+        "category": "Ciondoli",
+        "material": "Oro Bianco",
+        "weight": 0.7,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/21.jpg"
+        ]
     },
     {
-      "id": 22,
-      "title": "Ciondolo crocifisso",
-      "description": "Ciondolo d'oro 18kt con pietra nera al centro",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 1.30,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/22.jpg"
+        "id": 22,
+        "title": "Ciondolo crocifisso",
+        "description": "Ciondolo d'oro 18kt con pietra nera al centro",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 1.3,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/22.jpg"
+        ]
     },
     {
-      "id": 23,
-      "title": "bracialle a fascia",
-      "description": "bracialle a fascia d'oro 18kt",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 7.70,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/23.jpg"
+        "id": 23,
+        "title": "bracialle a fascia",
+        "description": "bracialle a fascia d'oro 18kt",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 7.7,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/23.jpg"
+        ]
     },
     {
-      "id": 24,
-      "title": "Ciondolo a corno ",
-      "description": "Ciondolo a corno d'oro 18kt",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 1.5,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/24.jpg"
+        "id": 24,
+        "title": "Ciondolo a corno ",
+        "description": "Ciondolo a corno d'oro 18kt",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 1.5,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/24.jpg"
+        ]
     },
     {
-      "id": 25,
-      "title": "Bracialle a maglia con placa di incisione",
-      "description": "Bracialle a maglia con placa di incisione d'oro 18kt",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 2.9,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/25.jpg"
+        "id": 25,
+        "title": "Bracialle a maglia con placa di incisione",
+        "description": "Bracialle a maglia con placa di incisione d'oro 18kt",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 2.9,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/25.jpg"
+        ]
     },
     {
-      "id": 26,
-      "title": "Collanana con ciondolo",
-      "description": "Collanana con ciondolo a stelle con zirconi, oro bianco 18kt ",
-      "category": "Collane",
-      "material": "Oro Bianco",
-      "weight": 5.2,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/26.jpg"
+        "id": 26,
+        "title": "Collanana con ciondolo",
+        "description": "Collanana con ciondolo a stelle con zirconi, oro bianco 18kt ",
+        "category": "Collane",
+        "material": "Oro Bianco",
+        "weight": 5.2,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/26.jpg"
+        ]
     },
     {
-      "id": 44,
-      "title": "Ciondo a corno",
-      "description": "Ciondolo d'oro 18kt con pietra rossa e corallo a forma di corno ",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 2.6,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/44.jpg"
+        "id": 44,
+        "title": "Ciondo a corno",
+        "description": "Ciondolo d'oro 18kt con pietra rossa e corallo a forma di corno ",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 2.6,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/44.jpg"
+        ]
     },
     {
-      "id": 34,
-      "title": "Ciondolo crocifisso",
-      "description": "Ciondolo a crocifisso d'oro 18kt",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 4,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/34.jpg"
+        "id": 34,
+        "title": "Ciondolo crocifisso",
+        "description": "Ciondolo a crocifisso d'oro 18kt",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 4,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/34.jpg"
+        ]
     },
     {
-      "id": 41,
-      "title": "Collana con ciondolo",
-      "description": "Collana d'oro 18kt con Zircone e perla ",
-      "category": "Collane",
-      "material": "Oro Bianco",
-      "weight": 5.1,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/41.jpg"
+        "id": 41,
+        "title": "Collana con ciondolo",
+        "description": "Collana d'oro 18kt con Zircone e perla ",
+        "category": "Collane",
+        "material": "Oro Bianco",
+        "weight": 5.1,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/41.jpg"
+        ]
     },
     {
-      "id": 35,
-      "title": "Ciondolo crocifisso",
-      "description": "Ciondolo crocifisso con incisione INRI 18kt",
-      "category": "Ciondoli",
-      "material": "Oro Giallo",
-      "weight": 3,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/35.jpg"
+        "id": 35,
+        "title": "Ciondolo crocifisso",
+        "description": "Ciondolo crocifisso con incisione INRI 18kt",
+        "category": "Ciondoli",
+        "material": "Oro Giallo",
+        "weight": 3,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/35.jpg"
+        ]
     },
     {
-      "id": 40,
-      "title": "Collana maglia a goccia",
-      "description": "Collana a maglia di gocccia con oro bianco 18kt",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 17.5,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/40.jpg"
+        "id": 40,
+        "title": "Collana maglia a goccia",
+        "description": "Collana a maglia di gocccia con oro bianco 18kt",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 17.5,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/40.jpg"
+        ]
     },
     {
-      "id": 39,
-      "title": "Collana maglia a cordoncino",
-      "description": "Collana d'oro 18kt Maglia a cordoncino lunga 60cm",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 21.1,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/39.jpg"
+        "id": 39,
+        "title": "Collana maglia a cordoncino",
+        "description": "Collana d'oro 18kt Maglia a cordoncino lunga 60cm",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 21.1,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/39.jpg"
+        ]
     },
     {
-      "id": 38,
-      "title": "Collana maglia cubana",
-      "description": "MAGLIA CUBANA MARCA UNO-A-ERRE ORO GIALLO 18kt LUGA 61cm",
-      "category": "Collane",
-      "material": "Oro Giallo",
-      "weight": 15.5,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/38.jpg"
+        "id": 38,
+        "title": "Collana maglia cubana",
+        "description": "MAGLIA CUBANA MARCA UNO-A-ERRE ORO GIALLO 18kt LUGA 61cm",
+        "category": "Collane",
+        "material": "Oro Giallo",
+        "weight": 15.5,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/38.jpg"
+        ]
     },
     {
-      "id": 36,
-      "title": "Bracialle a maglia a goccia",
-      "description": "Bracialle a maglia a goccia con oro bianco18kt",
-      "category": "Bracciali",
-      "material": "Oro Giallo",
-      "weight": 5,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/36.jpg"
+        "id": 36,
+        "title": "Bracialle a maglia a goccia",
+        "description": "Bracialle a maglia a goccia con oro bianco18kt",
+        "category": "Bracciali",
+        "material": "Oro Giallo",
+        "weight": 5,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/36.jpg"
+        ]
     },
     {
-      "id": 42,
-      "title": "Anello solitario",
-      "description": "Anello solitario in oro 18kt bianco con diamante.",
-      "category": "Anelli",
-      "material": "Oro Bianco",
-      "weight": 3,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/42.jpg"
+        "id": 42,
+        "title": "Anello solitario",
+        "description": "Anello solitario in oro 18kt bianco con diamante.",
+        "category": "Anelli",
+        "material": "Oro Bianco",
+        "weight": 3,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/42.jpg"
+        ]
     },
     {
-      "id": 27,
-      "title": "Anello Tricolore",
-      "description": "Anello Tricolore oro 18kt",
-      "category": "Anelli",
-      "material": "Oro Giallo",
-      "weight": 6.8,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/27.jpg"
+        "id": 27,
+        "title": "Anello Tricolore",
+        "description": "Anello Tricolore oro 18kt",
+        "category": "Anelli",
+        "material": "Oro Giallo",
+        "weight": 6.8,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/27.jpg"
+        ]
     },
     {
-      "id": 69,
-      "title": "Braccialetto Padona",
-      "description": "Braccialetto Padona con ciondoli vari",
-      "category": "Bracciali",
-      "material": "Argento",
-      "weight": 31,
-      "price": 0,
-      "featured": false,
-      "condition": "Usato",
-      "imagePath": "/Images/Articoli/69.jpg"
+        "id": 69,
+        "title": "Braccialetto Padona",
+        "description": "Braccialetto Padona con ciondoli vari",
+        "category": "Bracciali",
+        "material": "Argento",
+        "weight": 31,
+        "price": 0,
+        "featured": false,
+        "condition": "Usato",
+        "images": [
+            "/Images/Articoli/69.jpg"
+        ]
     }
 ]

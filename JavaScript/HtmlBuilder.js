@@ -42,7 +42,7 @@ export default class HtmlBuilder {
         string = HtmlBuilder.RepleaceAllKey(string, "price", jsonProduct.price);
         string = HtmlBuilder.RepleaceAllKey(string, "featured", jsonProduct.featured);
         string = HtmlBuilder.RepleaceAllKey(string, "condition", jsonProduct.condition);
-        string = HtmlBuilder.RepleaceAllKey(string, "imagePath", jsonProduct.imagePath);
+        string = HtmlBuilder.RepleaceAllKey(string, "imagePath", jsonProduct.images?.[0] || '');
         return string;
     }
     // #endregion Section-Product

@@ -29,8 +29,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     await StartUp();
     InitTabs();
 
+    // Load product detail modal into body (outside sections to avoid transform issues)
+    let htmlDettaglio = await htmlBuilder.GetStringView('ViewElements/Dettaglio.html');
+    let dettaglioContainer = document.createElement('div');
+    dettaglioContainer.innerHTML = htmlDettaglio;
+    document.body.appendChild(dettaglioContainer);
+
     let htmlProduct = await htmlBuilder.GetStringView('ViewElements/Product.html');
-    productsManager = new ProductsManager(jsonProducts, htmlProduct, "gridProducts", "searchProductInput", "categoryFilter", "materialFilter", "conditionFilter");
+    productsManager = new ProductsManager(jsonProducts, htmlProduct, "gridProducts", "searchProductInput", "categoryFilter", "materialFilter", "conditionFilter", jsonDataInfo.whatsApp);
     await productsManager.ReloadProducts();
 
     // NotificationCenter

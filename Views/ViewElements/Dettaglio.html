@@ -1,0 +1,58 @@
+<!-- Modal Dettaglio Prodotto -->
+<div id="productDetailModal" class="product-detail-overlay" style="display: none;">
+    <div class="product-detail-modal">
+        <button id="btnCloseDetail" class="product-detail-close" aria-label="Chiudi">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="row g-0 h-100">
+            <!-- Galleria immagini -->
+            <div class="col-lg-7 product-detail-gallery">
+                <div class="product-detail-main-img-wrap">
+                    <img id="detailMainImg" src="" alt="" class="product-detail-main-img">
+                    <button id="btnPrevImg" class="product-detail-nav-btn prev" style="display: none;">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button id="btnNextImg" class="product-detail-nav-btn next" style="display: none;">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                    <span id="detailImgCounter" class="product-detail-img-counter" style="display: none;"></span>
+                </div>
+                <div id="detailThumbnails" class="product-detail-thumbnails"></div>
+            </div>
+            <!-- Info prodotto -->
+            <div class="col-lg-5 product-detail-info">
+                <div class="product-detail-info-inner">
+                    <span id="detailCategory" class="product-detail-category"></span>
+                    <h2 id="detailTitle" class="product-detail-title"></h2>
+                    <div class="product-detail-divider"></div>
+                    <div class="product-detail-specs">
+                        <div class="product-detail-spec">
+                            <span class="product-detail-spec-label"><i class="bi bi-gem me-2"></i>Materiale</span>
+                            <span id="detailMaterial" class="product-detail-spec-value"></span>
+                        </div>
+                        <div class="product-detail-spec">
+                            <span class="product-detail-spec-label"><i class="bi bi-speedometer me-2"></i>Peso</span>
+                            <span id="detailWeight" class="product-detail-spec-value"></span>
+                        </div>
+                        <div class="product-detail-spec">
+                            <span class="product-detail-spec-label"><i class="bi bi-star me-2"></i>Condizione</span>
+                            <span id="detailCondition" class="product-detail-spec-value"></span>
+                        </div>
+                        <div class="product-detail-spec">
+                            <span class="product-detail-spec-label"><i class="bi bi-upc-scan me-2"></i>ID Articolo</span>
+                            <span id="detailId" class="product-detail-spec-value"></span>
+                        </div>
+                    </div>
+                    <div class="product-detail-divider"></div>
+                    <h6 style="color: var(--champagne); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; margin-bottom: 0.5rem;">Descrizione</h6>
+                    <p id="detailDescription" class="product-detail-description"></p>
+                    <div class="mt-auto pt-3">
+                        <a id="detailWhatsApp" href="#" target="_blank" class="btn btn-champagne w-100">
+                            <i class="bi bi-whatsapp me-2"></i>Richiedi Informazioni
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

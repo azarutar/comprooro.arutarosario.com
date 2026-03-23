@@ -3,7 +3,7 @@ import HtmlBuilder from "./HtmlBuilder.js";
 import IndexManager from "./IndexManager.js";
 
 export default class ProductsManager {
-    constructor(jsonProducts, htmlProduct, idProductGrid, idSearchTextProduct, idCategoryFilter, idMaterialFilter, idConditionFilter) {
+    constructor(jsonProducts, htmlProduct, idProductGrid, idSearchTextProduct, idCategoryFilter, idMaterialFilter, idConditionFilter, whatsAppLink) {
         this.products = jsonProducts;
         this.htmlProduct = htmlProduct;
         this.idProductGrid = idProductGrid;
@@ -13,8 +13,155 @@ export default class ProductsManager {
         this.idConditionFilter = idConditionFilter;
         this.filteredProdotti = [];
         this.dataPrice = null;
+        this.whatsAppLink = whatsAppLink || '';
+
+        // Detail modal state
+        this.currentDetailProduct = null;
+        this.currentImageIndex = 0;
 
         this.LoadPrices();
+        this.InitDetailModal();
+    }
+
+    InitDetailModal() {
+        // Delegate click on product cards
+        const grid = document.getElementById(this.idProductGrid);
+        if (!grid) {
+            console.error('ProductsManager: gridProducts not found in DOM');
+            return;
+        }
+        grid.addEventListener('click', (e) => {
+            const card = e.target.closest('.product-card');
+            if (!card) return;
+            const productId = parseInt(card.dataset.productId);
+            const product = this.products.find(p => p.id === productId);
+            if (product) {
+                console.log('Opening detail for:', product.title);
+                this.OpenDetail(product);
+            }
+        });
+
+        // Close modal
+        document.getElementById('btnCloseDetail')?.addEventListener('click', () => this.CloseDetail());
+        document.getElementById('productDetailModal')?.addEventListener('click', (e) => {
+            if (e.target.id === 'productDetailModal') this.CloseDetail();
+        });
+
+        // Navigation arrows
+        document.getElementById('btnPrevImg')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.NavigateImage(-1);
+        });
+        document.getElementById('btnNextImg')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.NavigateImage(1);
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!this.currentDetailProduct) return;
+            if (e.key === 'Escape') this.CloseDetail();
+            if (e.key === 'ArrowLeft') this.NavigateImage(-1);
+            if (e.key === 'ArrowRight') this.NavigateImage(1);
+        });
+    }
+
+    OpenDetail(product) {
+        this.currentDetailProduct = product;
+        this.currentImageIndex = 0;
+        const images = product.images || [];
+
+        // Fill info
+        document.getElementById('detailTitle').textContent = product.title;
+        document.getElementById('detailCategory').textContent = product.category;
+        document.getElementById('detailMaterial').textContent = product.material;
+        document.getElementById('detailWeight').textContent = product.weight + 'gr';
+        document.getElementById('detailCondition').textContent = product.condition;
+        document.getElementById('detailId').textContent = product.id;
+        document.getElementById('detailDescription').textContent = product.description;
+
+        // WhatsApp link
+        const waBtn = document.getElementById('detailWhatsApp');
+        if (waBtn && this.whatsAppLink) {
+            const msg = encodeURIComponent(`Salve, vorrei informazioni sull'articolo: ${product.title} (ID: ${product.id})`);
+            waBtn.href = `${this.whatsAppLink}?text=${msg}`;
+        }
+
+        // Main image
+        this.UpdateMainImage(images);
+
+        // Thumbnails
+        this.BuildThumbnails(images);
+
+        // Show/hide nav arrows
+        const showNav = images.length > 1;
+        document.getElementById('btnPrevImg').style.display = showNav ? '' : 'none';
+        document.getElementById('btnNextImg').style.display = showNav ? '' : 'none';
+
+        // Show modal
+        const modal = document.getElementById('productDetailModal');
+        modal.style.display = 'flex';
+        requestAnimationFrame(() => modal.classList.add('active'));
+        document.body.style.overflow = 'hidden';
+    }
+
+    CloseDetail() {
+        const modal = document.getElementById('productDetailModal');
+        modal.classList.remove('active');
+        setTimeout(() => {
+            modal.style.display = 'none';
+            this.currentDetailProduct = null;
+        }, 300);
+        document.body.style.overflow = '';
+    }
+
+    UpdateMainImage(images) {
+        const mainImg = document.getElementById('detailMainImg');
+        mainImg.src = images[this.currentImageIndex];
+        mainImg.alt = this.currentDetailProduct.title;
+
+        // Update active thumbnail
+        document.querySelectorAll('.product-detail-thumb').forEach((thumb, i) => {
+            thumb.classList.toggle('active', i === this.currentImageIndex);
+        });
+
+        // Update image counter
+        const counter = document.getElementById('detailImgCounter');
+        if (counter) {
+            if (images.length > 1) {
+                counter.textContent = `${this.currentImageIndex + 1} / ${images.length}`;
+                counter.style.display = '';
+            } else {
+                counter.style.display = 'none';
+            }
+        }
+    }
+
+    BuildThumbnails(images) {
+        const container = document.getElementById('detailThumbnails');
+        container.innerHTML = '';
+        if (images.length <= 1) return;
+
+        images.forEach((src, i) => {
+            const thumb = document.createElement('div');
+            thumb.className = 'product-detail-thumb' + (i === 0 ? ' active' : '');
+            thumb.innerHTML = `<img src="${src}" alt="Foto ${i + 1}">`;
+            thumb.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.currentImageIndex = i;
+                this.UpdateMainImage(images);
+            });
+            container.appendChild(thumb);
+        });
+    }
+
+    NavigateImage(direction) {
+        if (!this.currentDetailProduct) return;
+        const images = this.currentDetailProduct.images || [];
+        if (images.length <= 1) return;
+
+        this.currentImageIndex = (this.currentImageIndex + direction + images.length) % images.length;
+        this.UpdateMainImage(images);
     }
 
     async ReloadProducts() {
@@ -63,10 +210,15 @@ export default class ProductsManager {
         string = HtmlBuilder.RepleaceAllKey(string, "category", jsonProduct.category);
         string = HtmlBuilder.RepleaceAllKey(string, "material", jsonProduct.material);
         string = HtmlBuilder.RepleaceAllKey(string, "weight", jsonProduct.weight);
-        //string = HtmlBuilder.RepleaceAllKey(string, "price", this.GetLiveProductPrice(jsonProduct));
         string = HtmlBuilder.RepleaceAllKey(string, "featured", jsonProduct.featured ? "Featured" : "");
         string = HtmlBuilder.RepleaceAllKey(string, "condition", jsonProduct.condition);
-        string = HtmlBuilder.RepleaceAllKey(string, "imagePath", jsonProduct.imagePath);
+        string = HtmlBuilder.RepleaceAllKey(string, "imagePath", jsonProduct.images?.[0] || '');
+
+        // Image count badge
+        const images = jsonProduct.images || [];
+        const countHtml = images.length > 1 ? `<i class="bi bi-images me-1"></i>${images.length}` : '';
+        string = HtmlBuilder.RepleaceAllKey(string, "imageCount", countHtml);
+
         return string;
     }
 
@@ -84,9 +236,8 @@ export default class ProductsManager {
     async GetLivePrice() {
         let LA_TUA_API_KEY = "e8c5189e937efdd2ee4958a07cbc9c3a";
         let fiat = "EUR";
-        let symbols = "XAU,XAG,XPT"; //'XAUUAE24,XAUUAE22,XAUUAE18";
+        let symbols = "XAU,XAG,XPT";
         try {
-            //let response = await fetch(`https://metals-api.com/api/latest?access_key=${LA_TUA_API_KEY}&base=${fiat}&symbols=${symbols}`);
             let response = await fetch(`https://api.metalpriceapi.com/v1/latest?api_key=${LA_TUA_API_KEY}&base=${fiat}&currencies=${symbols}`);
             let data = await response.json();
             return data;
@@ -99,15 +250,14 @@ export default class ProductsManager {
     async LoadPrices() {
         this.dataPrice = await this.GetLivePrice();
         console.log("Prezzi caricati:", this.dataPrice);
-        // Qui puoi aggiornare l'UI o filtrare prodotti
     }
 
     GetLiveProductPrice(product) {
-        if ((!this.dataPrice || !this.dataPrice.rates) && product.price ) return product.price; // Fallback
+        if ((!this.dataPrice || !this.dataPrice.rates) && product.price ) return product.price;
 
         switch (product.material) {
             case "Oro":
-                return product.weight * this.dataPrice.rates.XAU; // Prezzo in EUR
+                return product.weight * this.dataPrice.rates.XAU;
             case "Argento":
                 return product.weight * this.dataPrice.rates.XAG;
             case "Platino":
