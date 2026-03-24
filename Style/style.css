@@ -216,7 +216,7 @@ section {
 .bg-chi-siamo,
 .bg-contatti {
     position: relative;
-    background-image: url('/Images/metal-gold-metal-plate-wallpaper-preview.jpg');
+    background-image: url('Images/metal-gold-metal-plate-wallpaper-preview.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
