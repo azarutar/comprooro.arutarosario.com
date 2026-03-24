@@ -504,6 +504,20 @@
     ]
   },
   {
+    "id": 124,
+    "title": "ORECCHINI",
+    "description": "ORECCHINI A CATENA ORO BIANCO 18K",
+    "category": "Orecchini",
+    "material": "Oro Bianco",
+    "weight": 380,
+    "price": 0,
+    "featured": false,
+    "condition": "Usato",
+    "images": [
+      "Images/Articoli/124-1.jpg"
+    ]
+  },
+  {
     "id": 125,
     "title": "BRACCIALE MARCA NOVELLO",
     "description": "BRACCIALE DONNA ORO BIANCO E GIALLO 18K MARCA NOVELLO",
